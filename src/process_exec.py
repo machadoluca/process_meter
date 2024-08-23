@@ -45,3 +45,4 @@ def process_exec(process_command: str, runtime: float) -> tuple | None:
         print("User CPU Time: {:.6f} seconds".format(cpu_times_user))
         print("System CPU Time: {:.6f} seconds".format(cpu_times_system))
 
+        return (cpu_times_system, cpu_times_user)
